@@ -160,25 +160,34 @@ a:hover {
 @media (max-width: 600px) {
   .article-row {
     flex-direction: column;
-    align-items: stretch;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 40px;
   }
 
   .article-row a.button {
-    width: 100%;
-    max-width: none;
-    margin-bottom: 10px;
+    width: 90%;
+    margin: 0;
   }
 
   .double-arrow {
-    display: block;
     position: static;
-    margin: -5px 0 10px 0;
+    transform: none;
     font-size: 1.2rem;
-    color: #ffcc00;
+    margin: -5px 0;
+    z-index: 0;
   }
-  
+
+  .vertical-line {
+    left: 5px;
+    width: 2px;
+  }
+
   .explanation {
     font-size: 0.65rem;
     padding: 5px 8px;
+    max-width: 90%;
+    right: 5px;
+    bottom: 5px;
   }
 }
