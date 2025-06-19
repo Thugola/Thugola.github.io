@@ -33,3 +33,32 @@ body {
   display: inline-block;
   cursor: pointer;
 }
+
+h3 {
+  font-family: Georgia, serif;
+  text-align: center;
+}
+
+h4 {
+  font-family: Georgia, serif;
+  text-align: center;
+}
+
+h2 {
+  font-family: Georgia, serif;
+  text-align: center;
+}
+
+.article-list {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border-left: 2px solid #888;
+}
+.content {
+  max-width: 700px;      /* largura máxima para não espalhar demais */
+  margin: 2rem auto;     /* centraliza horizontalmente e dá margem vertical */
+  padding: 0 1rem;       /* um pouco de espaçamento interno lateral */
+  color: white;          /* cor do texto */
+  font-family: Arial, sans-serif;  /* fonte limpa e legível */
+  line-height: 1.6;      /* espaçamento entre linhas para melhor leitura */
+}
