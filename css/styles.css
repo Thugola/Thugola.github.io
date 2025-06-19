@@ -170,9 +170,13 @@ a:hover {
   }
 
   .double-arrow {
-    display: none; /* oculta a seta ⇄ no mobile, opcional */
+    display: block;
+    position: static;
+    margin: -5px 0 10px 0;
+    font-size: 1.2rem;
+    color: #ffcc00;
   }
-
+  
   .explanation {
     font-size: 0.65rem;
     padding: 5px 8px;
