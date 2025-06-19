@@ -62,3 +62,97 @@ h2 {
   font-family: Arial, sans-serif;  /* fonte limpa e legível */
   line-height: 1.6;      /* espaçamento entre linhas para melhor leitura */
 }
+
+a {
+  color: yellow;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #ffd633; /* amarelo um pouco mais claro no hover */
+}
+
+.title {
+  text-decoration: underline;
+  font-family: Georgia, serif;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.content {
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+  padding-left: 40px; /* espaço para a linha vertical */
+}
+
+/* Linha vertical conectando todos os artigos */
+.vertical-line {
+  position: absolute;
+  left: 10px;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: #666;
+  opacity: 0.5;
+}
+
+.article-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.article-row a.button {
+  background: none;
+  border: 1px solid white;
+  color: white;
+  padding: 8px 12px;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 3px;
+  width: 45%;
+  text-align: center;
+  transition: background-color 0.2s;
+  position: relative;
+  z-index: 2;
+}
+
+.article-row a.button:hover {
+  background-color: #444;
+}
+
+/* Setinha dupla na primeira linha só */
+.double-arrow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5rem;
+  color: #ffcc00;
+  user-select: none;
+  z-index: 1;
+}
+
+.explanation {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  font-size: 0.75rem;
+  color: #aaa;
+  font-family: Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  max-width: 280px;
+  background: rgba(0,0,0,0.7);
+  padding: 6px 10px;
+  border-radius: 4px;
+}
+
+.explanation .arrow-icon {
+  font-size: 1rem;
+  color: #ffcc00;
+}
